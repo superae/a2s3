@@ -66,7 +66,7 @@ public class ProductActivity extends AppCompatActivity {
 
                 startActivity(i);
 
-                overridePendingTransition(R.anim.slide_left,R.anim.slide_left);
+//                overridePendingTransition(R.anim.slide_left,R.anim.slide_left);
 
 
             }
