@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="สินค้าล่าสุด"/>
+    <item
+        android:id="@+id/action_settings"
+        android:title="ราคาต่ำ-สูง" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="ราคาสูง-ต่ำ" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="เรียงตามชื่อ A-Z " />
+    <item
+        android:id="@+id/action_settings"
+        android:title="เรียงตามชื่อ Z-A" />
+
+</menu>
