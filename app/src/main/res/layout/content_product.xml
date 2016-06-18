@@ -7,16 +7,262 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_product"
-    tools:context="com.all2sale.a2s.ProductActivity">
+    tools:context="com.all2sale.a2s.ProductActivity"
+    android:background="@color/material_grey_300">
 
 
-    <FrameLayout
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="false"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="false"
-        android:background="@color/colorPrimary">
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tableLayout">
 
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center">
+
+            <ImageButton android:id="@+id/imageButton"
+                android:layout_column="0"
+                android:src="@drawable/ic_view_module_white_24dp"
+                android:layout_width="80dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:padding="10dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_column="1"
+                android:src="@drawable/ic_view_list_white_24dp"
+                android:layout_width="80dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:padding="10dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_column="2"
+                android:src="@drawable/ic_sort_white_24dp"
+                android:layout_width="80dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:padding="10dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_column="3"
+                android:src="@drawable/ic_filter_list_white_24dp"
+                android:layout_width="80dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+        </TableRow>
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/foreground_material_dark"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/frameLayout">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|top">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:id="@+id/imageView"
+                    android:layout_column="1"
+                    android:src="@drawable/thumb"
+                    android:scaleType="centerCrop" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Cake Choco"
+                    android:id="@+id/textView"
+                    android:layout_column="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="$100"
+                    android:id="@+id/textView2"
+                    android:layout_column="1"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/textView3" />
+            </TableRow>
+        </TableLayout>
     </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:background="@color/foreground_material_dark"
+        android:layout_alignBottom="@+id/frameLayout"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:layout_toEndOf="@+id/frameLayout">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:id="@+id/imageView2"
+                    android:layout_column="1"
+                    android:src="@drawable/thumb"
+                    android:scaleType="centerCrop" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="3dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Cake Choco"
+                    android:id="@+id/textView4"
+                    android:layout_column="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="$100"
+                    android:id="@+id/textView5"
+                    android:layout_column="1"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/textView6" />
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:background="@color/foreground_material_dark"
+        android:layout_below="@+id/frameLayout"
+        android:layout_alignLeft="@+id/frameLayout"
+        android:layout_alignStart="@+id/frameLayout"
+        android:layout_marginTop="5dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:id="@+id/imageView3"
+                    android:layout_column="1"
+                    android:src="@drawable/thumb"
+                    android:scaleType="centerCrop" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="3dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Cake Choco"
+                    android:id="@+id/textView7"
+                    android:layout_column="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="$100"
+                    android:id="@+id/textView8"
+                    android:layout_column="1"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/textView9" />
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
 </RelativeLayout>
