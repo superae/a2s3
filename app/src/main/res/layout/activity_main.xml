@@ -22,7 +22,8 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main"
-        app:menu="@menu/activity_main_drawer" />
+        app:menu="@menu/activity_main_drawer"
+        android:background="@color/material_grey_100" />
 
 
 
@@ -32,8 +33,7 @@
         android:scaleType="centerCrop"
         android:id="@+id/splashImage"
         android:src="@drawable/splash"
-        android:visibility="gone"
-        />
+        android:visibility="gone" />
 
 </android.support.v4.widget.DrawerLayout>
 

@@ -12,12 +12,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.TableLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ProductActivity extends AppCompatActivity {
 
-    private ImageButton button1;
-    private ImageButton button2;
+    private TextView button1;
+    private TextView button2;
+    private LinearLayout table;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +32,7 @@ public class ProductActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        button1 = (ImageButton) findViewById(R.id.sort_popup);
+        button1 = (TextView) findViewById(R.id.sort_popup);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +59,7 @@ public class ProductActivity extends AppCompatActivity {
         }); //closing the setOnClickListener method
 
 
-        button2 = (ImageButton) findViewById(R.id.imageButton4);
+        button2 = (TextView) findViewById(R.id.imageButton4);
 
         button2.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -73,6 +77,25 @@ public class ProductActivity extends AppCompatActivity {
 
         });
 
+
+
+        table = (LinearLayout) findViewById(R.id.productdetail);
+
+        table.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+
+                Intent i = new Intent(ProductActivity.this, ProductDetailActivity.class);
+
+                startActivity(i);
+//
+//                overridePendingTransition(R.anim.slide_left,R.anim.slide_left);
+
+
+            }
+
+        });
 
 
     }

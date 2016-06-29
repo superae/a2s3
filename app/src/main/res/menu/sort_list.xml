@@ -12,7 +12,7 @@
         android:title="ราคาสูง-ต่ำ" />
     <item
         android:id="@+id/action_settings"
-        android:title="เรียงตามชื่อ A-Z " />
+        android:title="เรียงตามชื่อ A-Z" />
     <item
         android:id="@+id/action_settings"
         android:title="เรียงตามชื่อ Z-A" />

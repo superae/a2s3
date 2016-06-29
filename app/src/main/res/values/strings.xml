@@ -26,4 +26,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <!-- filter -->
+
+    <string name="filter_product">ฟิลเตอร์สินค้า</string>
+    <string name="title_activity_product_detail">ProductDetailActivity</string>
+
 </resources>
