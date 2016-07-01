@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TableLayout;
 import android.widget.TextView;
@@ -24,17 +25,86 @@ public class ProductDetailActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        TextView pop = (TextView) findViewById(R.id.textView18);
-        pop.setOnClickListener(new View.OnClickListener(){
+
+        Button popdescription = (Button) findViewById(R.id.description01);
+
+        popdescription.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(view.getContext(), pop.class);
+                intent.putExtra("value_send", "ae0");
+
+                startActivity(intent);
+
+
+            }
+        });
+
+        TextView poppurchase = (TextView) findViewById(R.id.purchase01);
+
+        poppurchase.setOnClickListener(new View.OnClickListener(){
 
         @Override
             public void onClick(View view) {
 
-            startActivity(new Intent(ProductDetailActivity.this,pop.class));
+            Intent intent = new Intent(view.getContext(), pop.class);
+            intent.putExtra("value_send", "ae1");
+
+            startActivity(intent);
+
 
         }
         });
 
+        TextView popshipping = (TextView) findViewById(R.id.shipping01);
+
+        popshipping.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(view.getContext(), pop.class);
+                intent.putExtra("value_send", "ae2");
+
+                startActivity(intent);
+
+
+            }
+        });
+
+        TextView popguarantee = (TextView) findViewById(R.id.guarantee01);
+
+        popguarantee.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(view.getContext(), pop.class);
+                intent.putExtra("value_send", "ae3");
+
+                startActivity(intent);
+
+
+            }
+        });
+
+        Button popreview = (Button) findViewById(R.id.review01);
+
+        popreview.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(view.getContext(), pop.class);
+                intent.putExtra("value_send", "ae4");
+
+                startActivity(intent);
+
+
+            }
+        });
 
     }
 

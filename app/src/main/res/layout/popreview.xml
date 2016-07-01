@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout6">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="รีวิวสินค้า"
+            android:paddingTop="20dp"
+            android:paddingLeft="35dp"
+            android:paddingBottom="14dp"
+            android:textSize="18dp"
+            android:textIsSelectable="false"
+            android:textColor="@color/colorPrimaryDark" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight=".20"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/button4"
+            android:src="@mipmap/ic_circle_close_green"
+            android:textIsSelectable="false"
+            android:scaleType="center"
+            android:background="#ffffff"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_top_bottom"
+
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/photo"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/user"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name surname"
+                android:layout_toRightOf="@id/photo"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="-5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/graytext"
+                android:id="@+id/textView10" />
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star3"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="-8dp"
+                android:layout_toRightOf="@id/photo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preheat oven to 350 degrees F (175 degrees C). Grease and flour a 9x13 inch pan. Sift together the flour, "
+                android:paddingLeft="10dp"
+                android:textSize="11dp"
+                android:textColor="@color/material_grey_600"
+                android:id="@+id/textView11"
+                android:layout_below="@+id/star"
+                android:layout_marginTop="-10dp"
+                android:layout_toRightOf="@+id/photo" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_top_bottom"
+
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/photo"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/user"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name surname"
+                android:layout_toRightOf="@id/photo"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="-5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/graytext"
+                android:id="@+id/textView10" />
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star3"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="-8dp"
+                android:layout_toRightOf="@id/photo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preheat oven to 350 degrees F (175 degrees C). Grease and flour a 9x13 inch pan. Sift together the flour, "
+                android:paddingLeft="10dp"
+                android:textSize="11dp"
+                android:textColor="@color/material_grey_600"
+                android:id="@+id/textView11"
+                android:layout_below="@+id/star"
+                android:layout_marginTop="-10dp"
+                android:layout_toRightOf="@+id/photo" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_top_bottom"
+
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/photo"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/user"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name surname"
+                android:layout_toRightOf="@id/photo"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="-5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/graytext"
+                android:id="@+id/textView10" />
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star3"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="-8dp"
+                android:layout_toRightOf="@id/photo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preheat oven to 350 degrees F (175 degrees C). Grease and flour a 9x13 inch pan. Sift together the flour, "
+                android:paddingLeft="10dp"
+                android:textSize="11dp"
+                android:textColor="@color/material_grey_600"
+                android:id="@+id/textView11"
+                android:layout_below="@+id/star"
+                android:layout_marginTop="-10dp"
+                android:layout_toRightOf="@+id/photo" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_top_bottom"
+
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/photo"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/user"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name surname"
+                android:layout_toRightOf="@id/photo"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="-5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/graytext"
+                android:id="@+id/textView10" />
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star3"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="-8dp"
+                android:layout_toRightOf="@id/photo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preheat oven to 350 degrees F (175 degrees C). Grease and flour a 9x13 inch pan. Sift together the flour, "
+                android:paddingLeft="10dp"
+                android:textSize="11dp"
+                android:textColor="@color/material_grey_600"
+                android:id="@+id/textView11"
+                android:layout_below="@+id/star"
+                android:layout_marginTop="-10dp"
+                android:layout_toRightOf="@+id/photo" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_top_bottom"
+
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/photo"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/user"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name surname"
+                android:layout_toRightOf="@id/photo"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="-5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/graytext"
+                android:id="@+id/textView10" />
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star3"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="-8dp"
+                android:layout_toRightOf="@id/photo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preheat oven to 350 degrees F (175 degrees C). Grease and flour a 9x13 inch pan. Sift together the flour, "
+                android:paddingLeft="10dp"
+                android:textSize="11dp"
+                android:textColor="@color/material_grey_600"
+                android:id="@+id/textView11"
+                android:layout_below="@+id/star"
+                android:layout_marginTop="-10dp"
+                android:layout_toRightOf="@+id/photo" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_top_bottom"
+
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/photo"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/user"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name surname"
+                android:layout_toRightOf="@id/photo"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="-5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/graytext"
+                android:id="@+id/textView10" />
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star3"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="-8dp"
+                android:layout_toRightOf="@id/photo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preheat oven to 350 degrees F (175 degrees C). Grease and flour a 9x13 inch pan. Sift together the flour, "
+                android:paddingLeft="10dp"
+                android:textSize="11dp"
+                android:textColor="@color/material_grey_600"
+                android:id="@+id/textView11"
+                android:layout_below="@+id/star"
+                android:layout_marginTop="-10dp"
+                android:layout_toRightOf="@+id/photo" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_top_bottom"
+
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/photo"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/user"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name surname"
+                android:layout_toRightOf="@id/photo"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="-5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/graytext"
+                android:id="@+id/textView10" />
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star3"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="-8dp"
+                android:layout_toRightOf="@id/photo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preheat oven to 350 degrees F (175 degrees C). Grease and flour a 9x13 inch pan. Sift together the flour, "
+                android:paddingLeft="10dp"
+                android:textSize="11dp"
+                android:textColor="@color/material_grey_600"
+                android:id="@+id/textView11"
+                android:layout_below="@+id/star"
+                android:layout_marginTop="-10dp"
+                android:layout_toRightOf="@+id/photo" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+ </ScrollView>
+
+</LinearLayout>

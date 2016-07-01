@@ -116,7 +116,16 @@ public class ProductActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
             return true;
+
+        }else if (id == R.id.nav_search) {
+
+            startActivity(new Intent(getBaseContext(), SearchActivity.class));
+
+            return true;
+
+
         }
 
         return super.onOptionsItemSelected(item);

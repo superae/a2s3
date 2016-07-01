@@ -30,5 +30,8 @@
 
     <string name="filter_product">ฟิลเตอร์สินค้า</string>
     <string name="title_activity_product_detail">ProductDetailActivity</string>
+    <string name="title_activity_search">ค้นหา</string>
+
+    <string name="search">ค้นหา</string>
 
 </resources>
