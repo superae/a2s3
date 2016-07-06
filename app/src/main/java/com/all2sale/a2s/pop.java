@@ -1,14 +1,25 @@
 package com.all2sale.a2s;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -51,11 +62,49 @@ public class pop extends Activity {
 
         }else{
 
-            setContentView(R.layout.popreview);
+            setContentView(R.layout.activity_review);
+
+            int greenColor = Color.parseColor("#f1c40f");
+
+            RatingBar ratingBar = (RatingBar) findViewById(R.id.ratingBar);
+            LayerDrawable stars = (LayerDrawable) ratingBar.getProgressDrawable();
+            stars.getDrawable(2).setColorFilter(greenColor, PorterDuff.Mode.SRC_ATOP);
+
+//            FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+////            fab.setOnClickListener(new View.OnClickListener() {
+////                @Override
+////                public void onClick(View view) {
+////                    Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+////                            .setAction("Action", null).show();
+////                }
+////            });
+//
+//            //ImageButton properties = (ImageButton) findViewById(R.id.propBtn);
+//
+//            //And the layout we want to change is visibility
+//            final LinearLayout propLayout = (LinearLayout) findViewById(R.id.properLayout);
+//
+//            fab.setOnClickListener
+//                    (
+//                            new View.OnClickListener()
+//                            {
+//                                public void onClick(View v)
+//                                {
+//                                    if (propLayout.getVisibility() == View.VISIBLE)
+//                                    {
+//                                        propLayout.setVisibility(View.GONE);
+//                                    }
+//                                    else
+//                                    {
+//                                        propLayout.setVisibility(View.VISIBLE);
+//                                    }
+//                                }
+//                            }
+//                    );
+
+
 
         }
-
-
 
 
         Toast.makeText(pop.this, value, Toast.LENGTH_SHORT).show();
@@ -85,9 +134,9 @@ public class pop extends Activity {
 
 
 
-
-
     }
+
+
 
 
 

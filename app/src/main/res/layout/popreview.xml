@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffffff">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,18 +28,43 @@
             android:layout_weight=".20"
             android:textColor="@color/colorPrimary"
             android:id="@+id/button4"
-            android:src="@mipmap/ic_circle_close_green"
+            android:src="@mipmap/ic_close_green"
             android:textIsSelectable="false"
             android:scaleType="center"
             android:background="#ffffff"
             android:layout_marginRight="5dp" />
+
     </LinearLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
- <ScrollView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center">
+
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:id="@+id/ratingBar"
+                />
+
+        </LinearLayout>
+
+    <ScrollView
      android:layout_width="match_parent"
-     android:layout_height="match_parent"
-     android:scrollbars="none">
+     android:layout_height="fill_parent"
+     android:scrollbars="none"
+        android:paddingBottom="50dp"
+        android:layout_marginTop="45dp">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -428,7 +456,40 @@
 
 
         </RelativeLayout>
+
     </LinearLayout>
  </ScrollView>
+    <LinearLayout
+        android:id="@+id/properLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border_top"
+        android:paddingLeft="5dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:id="@+id/editText"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_green"
+            android:hint="รีวิวสินค้าที่นี่"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="#ffffff"
+            android:src="@mipmap/ic_send_g"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>

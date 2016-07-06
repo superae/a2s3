@@ -24,7 +24,7 @@
             android:layout_weight=".20"
             android:textColor="@color/colorPrimary"
             android:id="@+id/button4"
-            android:src="@mipmap/ic_circle_close_green"
+            android:src="@mipmap/ic_close_green"
             android:textIsSelectable="false"
             android:scaleType="center"
             android:background="#ffffff"

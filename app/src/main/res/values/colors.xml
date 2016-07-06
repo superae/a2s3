@@ -6,7 +6,7 @@
     <color name="black">#ffffff</color>
     <color name="color400">#26A69A</color>
     <color name="gray50">#FAFAFA</color>
-    <color name="gray200">#EEEEEE</color>
+    <color name="gray200">#ffffff</color>
     <color name="graytext">#363636</color>
 
 </resources>

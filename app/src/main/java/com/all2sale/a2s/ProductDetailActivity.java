@@ -10,8 +10,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ProductDetailActivity extends AppCompatActivity {
 
@@ -26,7 +29,7 @@ public class ProductDetailActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        Button popdescription = (Button) findViewById(R.id.description01);
+        Button popdescription = (Button) findViewById(R.id .description01);
 
         popdescription.setOnClickListener(new View.OnClickListener(){
 
@@ -105,6 +108,54 @@ public class ProductDetailActivity extends AppCompatActivity {
 
             }
         });
+
+
+        LinearLayout popoption = (LinearLayout) findViewById(R.id.option01);
+
+        popoption.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(view.getContext(), ProductOptionActivity.class);
+                intent.putExtra("value_send", "ae5");
+
+                startActivity(intent);
+
+
+            }
+        });
+
+        Button goshopBtn = (Button) findViewById(R.id.goshopBtn);
+
+        goshopBtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(view.getContext(), StoreActivity.class);
+                intent.putExtra("value_send", "ae5");
+
+                startActivity(intent);
+
+
+            }
+        });
+
+
+        LinearLayout favoriteBtn = (LinearLayout) findViewById(R.id.favorite01);
+
+        favoriteBtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+
+                Toast.makeText(ProductDetailActivity.this, "เพิ่มสินค้าโปรดสำเร็จ", Toast.LENGTH_SHORT).show();
+
+
+            }
+        });
+
 
     }
 
