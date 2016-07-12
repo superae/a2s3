@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/gray200">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nest_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:drawSelectorOnTop="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_gray"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/thumb_02"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="productname"
+                    android:layout_toRightOf="@id/photo"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/graytext"
+                    android:id="@+id/textView10" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="฿ 100 "
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/material_grey_600"
+                    android:id="@+id/textView11"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/photo" />
+
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star3"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@+id/textView11"
+                    android:layout_marginTop="-5dp"
+                    android:layout_toRightOf="@id/photo" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:alpha="0.6"
+                    android:src="@mipmap/ic_close_green"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 วัน"
+                    android:textSize="11dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

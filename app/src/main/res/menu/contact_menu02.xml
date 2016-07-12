@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StoreActivity">
+
+    <item
+        android:id="@+id/action01"
+        android:title="คุยกับสมาชิก"/>
+    <item
+        android:id="@+id/action02"
+        android:title="โทรถึงสมาชิก" />
+    <item
+        android:id="@+id/action03"
+        android:title="รายงานสมาชิก"
+        android:icon="@mipmap/ic_shield_green"
+        app:showAsAction="always|withText" />
+
+</menu>

@@ -12,42 +12,35 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:id="@+id/linearLayout3">
+        android:id="@+id/linearLayout3"
+        android:background="@color/colorPrimaryDark">
 
         <TextView
             android:id="@+id/imageButton"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/ic_view_module_white_24dp"
-            android:background="@color/colorPrimary"
-            android:paddingTop="5dp" />
+            android:layout_height="45dp"
+            android:drawableTop="@mipmap/ic_thumb_white" />
         <TextView
             android:id="@+id/imageButton2"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/ic_view_list_white_24dp"
-            android:background="@color/colorPrimary"
-            android:paddingTop="5dp" />
+            android:layout_height="45dp"
+            android:drawableTop="@mipmap/ic_list_white" />
         <TextView
             android:id="@+id/sort_popup"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/ic_sort_white_24dp"
-            android:background="@color/colorPrimary"
-            android:paddingTop="5dp" />
+            android:layout_height="45dp"
+            android:drawableTop="@mipmap/ic_sort_white" />
         <TextView
             android:id="@+id/imageButton4"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/ic_filter_list_white_24dp"
-            android:background="@color/colorPrimary"
-            android:paddingTop="5dp" />
+            android:layout_height="45dp"
+            android:drawableTop="@mipmap/ic_filter_white" />
 
 
 
@@ -61,9 +54,9 @@
         android:layout_toRightOf="@+id/frameLayout"
         android:layout_toEndOf="@+id/frameLayout"
         android:layout_below="@+id/tableLayout"
-        android:padding="8dp"
+        android:padding="5dp"
         android:scrollbars="none"
-        android:layout_marginTop="35dp">
+        android:layout_marginTop="45dp">
 
 
         <GridLayout
@@ -90,7 +83,7 @@
                     android:paddingRight="3dp">
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="200dp"
                         android:src="@drawable/thumb"
                         android:scaleType="centerCrop" />
                     <TextView
@@ -126,7 +119,7 @@
                     android:paddingRight="3dp">
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="200dp"
                         android:src="@drawable/thumb"
                         android:scaleType="centerCrop" />
                     <TextView
@@ -174,7 +167,7 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="200dp"
                         android:src="@drawable/thumb"
                         android:scaleType="centerCrop" />
 
@@ -211,7 +204,7 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="200dp"
                         android:src="@drawable/thumb"
                         android:scaleType="centerCrop" />
 

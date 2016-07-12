@@ -1,0 +1,442 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nest_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="false" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Part of my Case Study of Mandiri Mobile App. Let me know your thought :)"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="12dp"
+            android:background="@drawable/border_bottom" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/border_bottom"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:clickable="false"
+                android:src="@mipmap/ic_login_circle_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="ออนไลน์ : 25/06/2559 "
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/border_bottom"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:clickable="false"
+                android:src="@mipmap/ic_star_circle_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="ระดับสมาชิก : Level 1"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/border_bottom"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:clickable="false"
+                android:src="@mipmap/ic_store_circle_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:text="ร้านค้า : ร้านทดสอบระบบ" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/border_bottom"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:clickable="false"
+                android:src="@mipmap/ic_gift_circle_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="แต้มสะสม : 0 cell"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="35dp"
+                android:paddingBottom="15dp"
+                android:background="@drawable/border_bottom"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/photo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/user"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="@color/colorPrimaryDark"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:hint="เขียนอะไรบางอย่าง..."
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/editText2"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/photo"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/editText2"
+                    android:paddingRight="5dp"
+                    android:id="@+id/linearLayout3">
+
+                    <TextView
+                        android:id="@+id/imageButton3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/sort_popup"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_camera_gray"
+                        android:layout_height="35dp"/>
+                    <ImageView
+                        android:id="@+id/commentButton4"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="35dp"
+                        android:src="@mipmap/ic_send_g" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_margin="8dp"
+                android:id="@+id/card_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="3dp">
+
+                <RelativeLayout
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/photo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/user"
+                        app:civ_border_width="0dp"
+                        app:civ_border_color="@color/colorPrimaryDark"/>
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="name surname"
+                        android:layout_toRightOf="@id/photo"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/textView10"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 ชม"
+                        android:paddingLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="@color/material_grey_600"
+                        android:id="@+id/textView22"
+                        android:singleLine="false"
+                        android:layout_above="@+id/textView11"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Preheat oven to 350 degrees F (175 degrees C). Grease and flour a 9x13 inch pan. Sift together the flour, "
+                        android:paddingLeft="5dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/material_grey_800"
+                        android:paddingRight="5dp"
+                        android:id="@+id/textView11"
+                        android:layout_below="@+id/textView10"
+                        android:layout_marginTop="20dp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView11"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/imgcomment"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:src="@drawable/thumb_02"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/imageView" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="10dp">
+
+                                <ImageView
+                                    android:src="@drawable/thumb_03"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/imageView" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="10dp">
+
+                                <ImageView
+                                    android:src="@drawable/thumb_04"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/imageView3" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/imgcomment"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border_top"
+                        android:paddingTop="8dp"
+                        android:paddingRight="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/linearLayout3">
+
+                            <TextView
+                                android:id="@+id/imageButton2"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/sort_popup"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.4"
+                                android:drawableLeft="@mipmap/ic_green_heart"
+                                android:text="10k"
+                                android:layout_height="32dp"
+                                android:paddingTop="2dp"
+                                android:paddingBottom="13dp"
+                                android:password="false" />
+                            <TextView
+                                android:id="@+id/commentButton"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.4"
+                                android:layout_height="32dp"
+                                android:drawableLeft="@mipmap/ic_chat_green"
+                                android:text="10k"
+                                android:paddingTop="2dp"
+                                android:paddingBottom="13dp" />
+                            <TextView
+                                android:id="@+id/commentButton2"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.2"
+                                android:layout_height="32dp"
+                                android:drawablePadding="5dp"
+                                android:drawableLeft="@mipmap/ic_3dot_green"
+                                android:paddingTop="1dp"
+                                android:paddingBottom="12dp"
+                                android:contextClickable="false" />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:text="ไม่มีข้อความเพิ่มเติมแล้ว"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

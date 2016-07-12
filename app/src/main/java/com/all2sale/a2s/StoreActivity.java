@@ -10,14 +10,16 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
+import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class StoreActivity extends AppCompatActivity {
 
@@ -46,37 +48,18 @@ public class StoreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
         image = (ImageView) findViewById(R.id.image);
-        image.setImageResource(R.drawable.thumb_02);
+        image.setImageResource(R.drawable.cover);
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         collapsingToolbarLayout.setTitle("Storename");
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
         setPalette();
 
+        NestedScrollView scrollView = (NestedScrollView) findViewById (R.id.nest_scrollview);
+        scrollView.setFillViewport (true);
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-
-
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                FrameLayout hidefab = (FrameLayout) findViewById(R.id.hidefab);
-
-                if (hidefab.isShown()) {
-                    hidefab.setVisibility(View.GONE);
-
-
-                } else {
-                    hidefab.setVisibility(View.VISIBLE);
-                }
-
-
-            }
-        });
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
@@ -88,6 +71,52 @@ public class StoreActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_store);
         tabLayout.setupWithViewPager(mViewPager);
+
+
+
+        final FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+//                FrameLayout hidefab = (FrameLayout) findViewById(R.id.hidefab);
+//
+//                if (hidefab.isShown()) {
+//                    hidefab.setVisibility(View.GONE);
+//
+//
+//                } else {
+//                    hidefab.setVisibility(View.VISIBLE);
+//                }
+
+
+                        PopupMenu popup = new PopupMenu(StoreActivity.this, fab);
+                        //Inflating the Popup using xml file
+                        popup.getMenuInflater().inflate(R.menu.contact_menu, popup.getMenu());
+
+
+
+
+
+                //registering popup with OnMenuItemClickListener
+                        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                            public boolean onMenuItemClick(MenuItem item) {
+                                Toast.makeText(
+                                        StoreActivity.this,
+                                        item.getTitle(),
+                                        Toast.LENGTH_SHORT
+                                ).show();
+                                return true;
+                            }
+                        });
+
+                        popup.show(); //showing popup menu
+                    }
+
+
+
+        });
+
 
 
 
@@ -147,13 +176,13 @@ public class StoreActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 1:
-                    return new IndexFragment();
+                    return new StoreProductFragment();
                 case 2:
-                    return new IndexFragment();
+                    return new StoreTimelineFragment();
                 case 3:
-                    return new IndexFragment();
+                    return new StoreContactFragment();
                 default:
-                    return new FollowFragment();
+                    return new StoreHomeFragment();
             }
         }
 

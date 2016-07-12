@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StoreActivity">
+
+    <item
+        android:id="@+id/action01"
+        android:title="คุยกับร้าน"/>
+    <item
+        android:id="@+id/action02"
+        android:title="โทรหาร้าน" />
+    <item
+        android:id="@+id/action03"
+        android:title="รายงานร้านค้า"
+        android:icon="@mipmap/ic_shield_green"
+        app:showAsAction="always|withText" />
+
+</menu>
