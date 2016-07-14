@@ -171,7 +171,8 @@
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:paddingTop="10dp"
-            android:paddingBottom="10dp">
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="15dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -213,19 +214,6 @@
                 android:paddingBottom="10dp" />
 
         </LinearLayout>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:text="ดูเพิ่มเติม"
-            android:id="@+id/description01"
-            android:paddingTop="2dp"
-            android:paddingBottom="2dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/border_top_bottom"
-            android:drawableRight="@mipmap/ic_right_green"
-            android:textSize="12dp"
-            android:textColor="@color/colorPrimaryDark" />
 
 
         <TextView

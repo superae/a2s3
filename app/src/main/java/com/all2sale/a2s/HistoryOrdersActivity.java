@@ -12,7 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-public class FollowActivity extends AppCompatActivity {
+public class HistoryOrdersActivity extends AppCompatActivity {
 
 
 
@@ -37,7 +37,7 @@ public class FollowActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_follow);
+        setContentView(R.layout.activity_hisorders);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -96,26 +96,30 @@ public class FollowActivity extends AppCompatActivity {
                     return new ProfileFollowingFragment();
                 case 2:
                     return new ProfileStoreFollowFragment();
+                case 3:
+                    return new ProfileStoreFollowFragment();
                 default:
-                    return new ProfileFollowFragment();
+                    return new HistoryAllFragment();
             }
         }
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+
+            return 4;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "ติดตาม";
+                    return "ทั้งหมด";
                 case 1:
-                    return "กำลังติดตาม";
+                    return "ระหว่าง";
                 case 2:
-                    return "ติดตามร้านค้า";
+                    return "สำเร็จ";
+                case 3:
+                    return "ยกเลิก";
             }
             return null;
         }

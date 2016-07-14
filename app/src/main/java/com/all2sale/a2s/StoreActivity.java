@@ -48,7 +48,7 @@ public class StoreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
         image = (ImageView) findViewById(R.id.image);
-        image.setImageResource(R.drawable.cover);
+        image.setImageResource(R.drawable.cover25);
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         collapsingToolbarLayout.setTitle("Storename");

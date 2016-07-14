@@ -21,6 +21,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ProfileActivity extends AppCompatActivity {
@@ -50,7 +51,7 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         image = (ImageView) findViewById(R.id.image);
-        image.setImageResource(R.drawable.greencover);
+        image.setImageResource(R.drawable.cover);
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         collapsingToolbarLayout.setTitle("profilename");
@@ -137,6 +138,52 @@ public class ProfileActivity extends AppCompatActivity {
 
         });
 
+        LinearLayout follow2 = (LinearLayout) findViewById(R.id.followBtn2);
+
+        follow2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+
+                Intent i = new Intent(ProfileActivity.this, FollowActivity.class);
+
+                startActivity(i);
+
+
+
+            }
+
+        });
+
+        LinearLayout follow3 = (LinearLayout) findViewById(R.id.followBtn3);
+
+        follow3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+
+                Intent i = new Intent(ProfileActivity.this, FollowActivity.class);
+
+                startActivity(i);
+
+
+
+            }
+
+        });
+
+        TextView FollowBtn = (TextView) findViewById(R.id.textView11);
+
+        FollowBtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+
+                Toast.makeText(ProfileActivity.this, "ติดตาม", Toast.LENGTH_SHORT).show();
+
+
+            }
+        });
 
 
     }

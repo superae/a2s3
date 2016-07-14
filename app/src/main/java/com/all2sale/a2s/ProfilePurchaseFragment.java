@@ -1,11 +1,13 @@
 package com.all2sale.a2s;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
@@ -58,23 +60,53 @@ public class ProfilePurchaseFragment extends Fragment {
 //
 //
 //
-//        TextView button2 = (TextView) view.findViewById(R.id.imageButton4);
-//
-//        button2.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v){
-//
-//
-//                Intent i = new Intent(getActivity(), FillterActivity.class);
-//
-//                startActivity(i);
-//
-////                overridePendingTransition(R.anim.slide_left,R.anim.slide_left);
-//
-//
-//            }
-//
-//        });
+        LinearLayout active = (LinearLayout) view.findViewById(R.id.linearLayout3);
+
+        active.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+
+                Intent i = new Intent(getActivity(), HistoryOrdersActivity.class);
+
+                startActivity(i);
+
+
+            }
+
+        });
+
+        LinearLayout success = (LinearLayout) view.findViewById(R.id.linearLayout4);
+
+        success.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+
+                Intent i = new Intent(getActivity(), HistoryOrdersActivity.class);
+
+                startActivity(i);
+
+
+            }
+
+        });
+
+        LinearLayout cancel = (LinearLayout) view.findViewById(R.id.linearLayout5);
+
+        cancel.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+
+                Intent i = new Intent(getActivity(), HistoryOrdersActivity.class);
+
+                startActivity(i);
+
+
+            }
+
+        });
 
 
         return view;

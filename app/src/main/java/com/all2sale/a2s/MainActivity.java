@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_manage) {
 
-            startActivity(new Intent(getBaseContext(), LoginActivity.class));
+            startActivity(new Intent(getBaseContext(), HistoryOrdersActivity.class));
 
             return true;
 

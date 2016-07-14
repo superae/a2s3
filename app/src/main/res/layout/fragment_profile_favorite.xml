@@ -75,6 +75,7 @@
                     android:layout_toRightOf="@id/photo" />
 
                 <ImageView
+                    android:id="@+id/removeProduct"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:alpha="0.6"

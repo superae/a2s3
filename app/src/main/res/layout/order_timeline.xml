@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_order_timeline">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/linearLayout">
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp">
+
+            <RelativeLayout
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingTop="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/ic_cart_circle_green"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="สั่งซื้อสินค้า"
+                    android:layout_toRightOf="@id/photo"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/textView10"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30/07/2016 12.00.01"
+                    android:paddingLeft="3dp"
+                    android:layout_marginRight="2dp"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:textColor="@color/material_grey_600"
+                    android:id="@+id/textView22"
+                    android:singleLine="false"
+
+                    android:layout_above="@+id/textView11"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="คุณได้สั่งซื้อสินค้าจาก ร้านทดสอบระบบ เรียบร้อยแล้ว"
+                    android:paddingLeft="10dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/material_grey_800"
+                    android:paddingRight="5dp"
+                    android:id="@+id/textView11"
+                    android:layout_toRightOf="@id/photo"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginTop="3dp" />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp">
+
+            <RelativeLayout
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingTop="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/ic_checked_circle_orange"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="ยืนยันสั่งซื้อ"
+                    android:layout_toRightOf="@id/photo"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="#f39c12"
+                    android:id="@+id/textView10"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30/07/2016 13.00.01"
+                    android:paddingLeft="3dp"
+                    android:layout_marginRight="2dp"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:textColor="@color/material_grey_600"
+                    android:id="@+id/textView22"
+                    android:singleLine="false"
+
+                    android:layout_above="@+id/textView11"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ร้านทดสอบระบบ ได้ยืนยันการสั่งซื้อของคุณแล้ว กรุณาตรวจสอบรายการสินค้าก่อนชำระค่าสินค้า"
+                    android:paddingLeft="10dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/material_grey_800"
+                    android:paddingRight="5dp"
+                    android:id="@+id/textView11"
+                    android:layout_toRightOf="@id/photo"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginTop="3dp" />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp">
+
+            <RelativeLayout
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingTop="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/ic_credit_circle_green"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="ชำระค่าสินค้า"
+                    android:layout_toRightOf="@id/photo"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/textView10"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30/07/2016  20.00.01"
+                    android:paddingLeft="3dp"
+                    android:layout_marginRight="2dp"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:textColor="@color/material_grey_600"
+                    android:id="@+id/textView22"
+                    android:singleLine="false"
+
+                    android:layout_above="@+id/textView11"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="คุณได้แจ้งการชำระค่าสินค้าไปยังร้านค้าเรียบร้อยแล้ว กรุณารอการยืนยันจากร้านค้า"
+                    android:paddingLeft="10dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/material_grey_800"
+                    android:paddingRight="5dp"
+                    android:id="@+id/textView11"
+                    android:layout_toRightOf="@id/photo"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginTop="3dp" />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp">
+
+            <RelativeLayout
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingTop="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/ic_checked_circle_orange"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="ยืนยันชำระ"
+                    android:layout_toRightOf="@id/photo"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="#f39c12"
+                    android:id="@+id/textView10"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30/07/2016 20.30.01"
+                    android:paddingLeft="3dp"
+                    android:layout_marginRight="2dp"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:textColor="@color/material_grey_600"
+                    android:id="@+id/textView22"
+                    android:singleLine="false"
+
+                    android:layout_above="@+id/textView11"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ร้านทดสอบระบบ ได้ยืนยันการชำระค่าสินค้าของคุณแล้ว กรุณารอการจัดส่งสินค้า"
+                    android:paddingLeft="10dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/material_grey_800"
+                    android:paddingRight="5dp"
+                    android:id="@+id/textView11"
+                    android:layout_toRightOf="@id/photo"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginTop="3dp" />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp">
+
+            <RelativeLayout
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingTop="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/ic_truck_circle_orange"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="จัดส่งสินค้า"
+                    android:layout_toRightOf="@id/photo"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="#f39c12"
+                    android:id="@+id/textView10"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01/08/2016 11.30.01"
+                    android:paddingLeft="3dp"
+                    android:layout_marginRight="2dp"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:textColor="@color/material_grey_600"
+                    android:id="@+id/textView22"
+                    android:singleLine="false"
+
+                    android:layout_above="@+id/textView11"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ทางร้านค้าได้จัดส่งสินค้าแล้ว กรุณารอรับสินค้า"
+                    android:paddingLeft="10dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/material_grey_800"
+                    android:paddingRight="5dp"
+                    android:id="@+id/textView11"
+                    android:layout_toRightOf="@id/photo"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginTop="3dp" />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp">
+
+            <RelativeLayout
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingTop="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/ic_checked_circle_green"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="ซื้อสินค้าสำเร็จ"
+                    android:layout_toRightOf="@id/photo"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/textView10"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05/08/2016  10.20.01"
+                    android:paddingLeft="3dp"
+                    android:layout_marginRight="2dp"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:textColor="@color/material_grey_600"
+                    android:id="@+id/textView22"
+                    android:singleLine="false"
+
+                    android:layout_above="@+id/textView11"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="คุณได้ซื้อสินค้าสำเร็จ และให้คะแนนร้านค้าเรียบร้อยแล้ว ขอบคุณสำหรับการใช้บริการ"
+                    android:paddingLeft="10dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/material_grey_800"
+                    android:paddingRight="5dp"
+                    android:id="@+id/textView11"
+                    android:layout_toRightOf="@id/photo"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginTop="3dp" />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp">
+
+            <RelativeLayout
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingTop="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/ic_cancel_red_circle"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="ยกเลิกสั่งซื้อ"
+                    android:layout_toRightOf="@id/photo"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="#cc0000"
+                    android:id="@+id/textView10"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05/08/2016  10.20.01"
+                    android:paddingLeft="3dp"
+                    android:layout_marginRight="2dp"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:textColor="@color/material_grey_600"
+                    android:id="@+id/textView22"
+                    android:singleLine="false"
+
+                    android:layout_above="@+id/textView11"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="คุณได้ยกเลิก หรือร้านค้าได้ยกเลิกการสั่งซื้อนี้แล้ว"
+                    android:paddingLeft="10dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/material_grey_800"
+                    android:paddingRight="5dp"
+                    android:id="@+id/textView11"
+                    android:layout_toRightOf="@id/photo"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginTop="3dp" />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

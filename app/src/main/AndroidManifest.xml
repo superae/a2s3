@@ -88,9 +88,20 @@
 
         <activity
             android:name=".FollowActivity"
-            android:label="สมาชิก"
+            android:label="ชื่อสมาชิก"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HistoryOrdersActivity"
+            android:label="ประวัติการสั่งซื้อ ชื่อสมาชิก"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OrderTimelineActivity"
+            android:label="OID : 1234567890"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
 
 
     </application>

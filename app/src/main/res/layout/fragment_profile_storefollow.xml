@@ -9,7 +9,6 @@
     android:background="@color/gray200">
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -27,7 +26,7 @@
             android:background="#ffffff"
             android:paddingLeft="10dp"
             android:layout_marginLeft="3dp"
-            android:hint="ค้นหาผู้ติดตาม"
+            android:hint="ค้นหาร้านค้าที่ติดตาม"
             android:autoText="false" />
 
         <ImageView
@@ -72,8 +71,7 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                <ImageView
                     android:id="@+id/photo"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
@@ -138,8 +136,7 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                <ImageView
                     android:id="@+id/photo"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
@@ -213,8 +210,7 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <ImageView
                         android:id="@+id/photo"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
@@ -279,8 +275,7 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <ImageView
                         android:id="@+id/photo"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
@@ -354,8 +349,7 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <ImageView
                         android:id="@+id/photo"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
@@ -420,8 +414,7 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <ImageView
                         android:id="@+id/photo"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
@@ -495,8 +488,7 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <ImageView
                         android:id="@+id/photo"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
@@ -561,8 +553,7 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <ImageView
                         android:id="@+id/photo"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
@@ -636,8 +627,7 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <ImageView
                         android:id="@+id/photo"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
@@ -702,8 +692,7 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <ImageView
                         android:id="@+id/photo"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
@@ -758,152 +747,6 @@
                 </RelativeLayout>
 
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="3dp"
-                android:orientation="horizontal"
-                >
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="170dp"
-                    android:background="@drawable/border_gray"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginRight="3dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp">
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/photo"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:src="@drawable/thumb_02"
-                        android:layout_centerHorizontal="true"
-                        app:civ_border_width="0dp"
-                        app:civ_border_color="@color/colorPrimaryDark"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3 ชม"
-                        android:textSize="12dp"
-                        android:layout_alignParentRight="true"
-                        />
-
-                    <TextView
-                        android:layout_width="280dp"
-                        android:layout_height="wrap_content"
-                        android:text="productname"
-                        android:layout_below="@id/photo"
-                        android:textStyle="bold"
-                        android:textSize="16dp"
-                        android:gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:singleLine="true"
-                        android:textColor="@color/graytext"
-                        android:id="@+id/textView10" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_alignParentBottom="true"
-                        android:text="ติดตาม"
-                        android:textSize="15dp"
-                        android:textColor="#ffffff"
-                        android:id="@+id/textView11"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp"
-                        android:drawableLeft="@drawable/ic_add_circle_white_24dp"
-                        android:background="@android:color/holo_red_dark"
-                        android:textIsSelectable="false"
-                        android:paddingTop="3dp"
-                        android:paddingBottom="3dp"
-                        android:layout_marginTop="10dp"
-                        android:clickable="false" />
-
-
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="170dp"
-                    android:background="@drawable/border_gray"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginRight="3dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp">
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/photo"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:src="@drawable/thumb_02"
-                        android:layout_centerHorizontal="true"
-                        app:civ_border_width="0dp"
-                        app:civ_border_color="@color/colorPrimaryDark"/>
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3 ชม"
-                        android:textSize="12dp"
-                        android:layout_alignParentRight="true"
-                        />
-
-                    <TextView
-                        android:layout_width="280dp"
-                        android:layout_height="wrap_content"
-                        android:text="productname"
-                        android:layout_below="@id/photo"
-                        android:textStyle="bold"
-                        android:textSize="16dp"
-                        android:gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:singleLine="true"
-                        android:textColor="@color/graytext"
-                        android:id="@+id/textView10" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_alignParentBottom="true"
-                        android:text="กำลังติดตาม"
-                        android:textSize="15dp"
-                        android:textColor="#ffffff"
-                        android:id="@+id/textView11"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp"
-                        android:drawableLeft="@drawable/ic_check_circle_white_24dp"
-                        android:background="#27ae60"
-                        android:textIsSelectable="false"
-                        android:paddingTop="3dp"
-                        android:paddingBottom="3dp"
-                        android:layout_marginTop="10dp"
-                        android:clickable="false" />
-
-
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-
-
-
-
 
 
         </LinearLayout>
