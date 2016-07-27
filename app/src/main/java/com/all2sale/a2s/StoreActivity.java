@@ -175,6 +175,9 @@ public class StoreActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
             switch (position) {
+
+                case 0:
+                    return new StoreHomeFragment();
                 case 1:
                     return new StoreProductFragment();
                 case 2:
